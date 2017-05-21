@@ -1,0 +1,819 @@
+@charset "UTF-8";
+
+/* CMS-FES 2015 customize *****************************/
+// setting CSS
+@import "_setting.scss";
+
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* !: General ======================================= */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  webkit-tap-highlight-color: #fed136;
+  overflow-x: hidden;
+  font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+body > div {
+  background: #fff;
+  color: $color-text-base;
+  @include font14;
+}
+
+/* !: HTML Styles =================================== */
+p {
+  @include font14;
+  line-height: 1.75;
+  &.large {
+    @include font16;
+  }
+}
+
+a {
+  color: $color-blue-base;
+  outline: 0;
+  &:hover, &:focus, &:active, &.active {
+    outline: 0;
+  }
+  &:hover, &:focus, &:active, &.active {
+    color: #000;
+  }
+}
+
+::-moz-selection, ::selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+img {
+  &::selection, &::-moz-selection {
+    background: 0 0;
+  }
+}
+
+/* !: HEADINGS ====================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* !: Backgrounds =================================== */
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+  background-color: #222;
+}
+
+.bg-black {
+  background-color: $color-black;
+}
+
+/* !: Text ========================================== */
+.text-muted {
+  color: #777;
+}
+
+.text-primary {
+  color: #fed136;
+}
+
+.text-white {
+  color: #fff;
+}
+.text-gray40 {
+  color: $color-gray-40;
+}
+.text-gray60 {
+  color: $color-gray-60;
+}
+.text-gray80 {
+  color: $color-gray-80;
+}
+
+/* !: Image ========================================= */
+.img-centered {
+  margin: 0 auto;
+}
+
+/* !: Button ======================================== */
+.btn-primary {
+  border-color: #ffd335;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  background-color: #fed136;
+  &:hover, &:focus, &:active, &.active {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+  }
+  &:active, &.active {
+    background-image: none;
+  }
+  &.disabled, &[disabled] {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &.disabled:hover, &[disabled]:hover {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &.disabled:focus, &[disabled]:focus {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &.disabled:active, &[disabled]:active {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &.disabled.active, &[disabled].active {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  .badge {
+    color: #fed136;
+    background-color: #fff;
+  }
+}
+
+.open .dropdown-toggle.btn-primary {
+  border-color: #f6bf01;
+  color: #fff;
+  background-color: #fec503;
+  background-image: none;
+}
+
+fieldset[disabled] .btn-primary {
+  border-color: #fed136;
+  background-color: #fed136;
+  &:hover {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &:focus {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &:active {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &.active {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+}
+
+.btn-xl {
+  padding: 20px 40px;
+  background-color: $color-yellow-base;
+  border: none;
+  border-radius: 3px;
+  @include font18;
+  font-weight: bold;
+  color: #000;
+  &:hover, &:focus, &:active, &.active {
+    background-color: $color-yellow-dark;
+    color: #000;
+  }
+  &:active, &.active {
+    background-image: none;
+  }
+  &.disabled, &[disabled] {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &.disabled:hover, &[disabled]:hover {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &.disabled:focus, &[disabled]:focus {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &.disabled:active, &[disabled]:active {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &.disabled.active, &[disabled].active {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+}
+
+.open .dropdown-toggle.btn-xl {
+  border-color: #f6bf01;
+  color: #fff;
+  background-color: #fec503;
+  background-image: none;
+}
+
+fieldset[disabled] .btn-xl {
+  border-color: #fed136;
+  background-color: #fed136;
+  &:hover {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &:focus {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  &:active {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+  .active {
+    border-color: #fed136;
+    background-color: #fed136;
+  }
+}
+
+.btn-xl .badge {
+  color: #fed136;
+  background-color: #fff;
+}
+
+.btn {
+  &:focus, &:active, &.active, &:active:focus {
+    outline: 0;
+  }
+}
+
+
+/* !: Navigation ==================================== */
+.navbar-default {
+  border-color: transparent;
+  background-color: $color-blue-dark;
+// logo
+  .navbar-brand {
+    color: $color-yellow-base;
+    &:hover, &:focus, &:active, &.active {
+      color: #fec503;
+    }
+  }
+  .navbar-collapse {
+    border-color: #fff;
+  }
+  .navbar-toggle {
+    border-color: $color-yellow-base;
+    background-color: $color-yellow-base;
+    .icon-bar {
+      background-color: $color-blue-base;
+    }
+    &:hover, &:focus {
+      background-color: $color-yellow-base;
+    }
+  }
+  .nav li a {
+    text-transform: uppercase;
+    color: #fff;
+    &:hover, &:focus {
+      outline: 0;
+      color: $color-yellow-base;
+    }
+  }
+  .navbar-nav > .active > a {
+    background-color: $color-yellow-base;
+    border-radius: 0;
+    color: $color-black;
+    &:hover, &:focus {
+      background-color: $color-yellow-dark;
+    color: $color-black;
+    }
+  }
+}
+
+.logo img {
+  width: 230px;
+  height: auto;
+}
+
+// PCの時
+@media (min-width: $wise-pc) {
+  .navbar-default {
+    padding: 25px 0;
+    border: 0;
+    background-color: rgba(2, 10, 63, 0.65);
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+    .navbar-brand {
+      font-size: 2em;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      transition: all .3s;
+    }
+    .nav {
+      @include font14;
+    }
+    .navbar-nav > .active > a {
+      border-radius: 3px;
+    }
+    &.navbar-shrink {
+      padding: 10px 0;
+      background-color: $color-blue-dark;
+      .navbar-brand {
+        font-size: 1.5em;
+      }
+    }
+  }
+  .logo img {
+    width: 95%;
+    height: auto;
+  }
+}
+
+/* !: Header ======================================== */
+header {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url(../img/common/bg-head.png);// 花火背景
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    .intro-heading {
+      margin-bottom: 25px;
+      img {
+				width: 95%;
+      }
+    }
+  }
+}
+
+// PCの時
+@media (min-width: $wise-pc) {
+  header .intro-text {
+    padding-top: 180px;
+    padding-bottom: 200px;
+    .intro-heading {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* !: Footer ======================================== */
+footer {
+  padding: 25px 0;
+  text-align: center;
+  span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    @include font12;
+    line-height: 40px;
+  }
+  ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    line-height: 40px;
+  }
+}
+
+/* !: Content ======================================= */
+section {
+  padding: 100px 0;
+  h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    @include font40;
+    color: #000;
+  }
+  h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    @include font18;
+    font-weight: normal;
+  }
+}
+
+// PCの時
+@media (min-width: $wise-pc) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+// sosial buttons
+ul.social-buttons {
+  margin-bottom: 0;
+  li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    border-radius: 100%;
+    @include font20;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    &:hover, &:focus, &:active {
+      background-color: $color-yellow-base;
+    }
+  }
+}
+
+/* !: informarion ----------- */
+#informarion {
+  .section-heading {
+    margin: 15px 0;
+    color: #fff;
+  }
+}
+
+/* !: seminar --------------- */
+.team-member {
+  margin-bottom: 80px;
+  text-align: center;
+  img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+  }
+  h4 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+    text-transform: none;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #000;
+  }
+  h5 {
+    padding-top: 25px;
+    border-top: solid 1px $color-gray-40;
+    @include font18;
+    line-height: 1.35;
+    span {
+      display: block;
+      @include font14;
+      font-weight: normal;
+      color: $color-gray-60;
+    }
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+/* !: CMS list -------------- */
+#cmslist {
+  .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+    .portfolio-link {
+      max-width: 400px;
+      height: 250px;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      background-color: #fff;
+      img {
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        right: -100%;
+        bottom: -100%;
+        margin: auto;
+        padding: 0 20px;
+      }
+      .portfolio-hover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: rgba(254, 209, 54, 0.9);
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s;
+        z-index: 1000;
+        &:hover {
+          opacity: 1;
+        }
+        .portfolio-hover-content {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          height: 20px;
+          margin-top: -12px;
+          text-align: center;
+          @include font20;
+          color: #fff;
+          i {
+            margin-top: -12px;
+          }
+          h3, h4 {
+            margin: 0;
+          }
+        }
+      }
+
+    }
+    .portfolio-caption {
+      margin: 0 auto;
+      padding: 25px;
+      max-width: 400px;
+      text-align: center;
+      background-color: #fff;
+      h4 {
+        margin: 0;
+        text-transform: none;
+        @include font15;
+      }
+    }
+  }
+  * {
+    z-index: 2;
+  }
+}
+
+// PCの時
+@media (min-width: $wise-pc) {
+  .section-heading {
+    br {
+      display: none;
+    }
+  }
+  #cmslist {
+    .portfolio-item {
+      margin: 0 0 30px;
+      .portfolio-link {
+        height: 400px;
+      }
+    }
+  }
+}
+
+/* !: Time line ------------- */
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #f1f1f1;
+  }
+  > li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+    &:before {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    .timeline-panel {
+      float: right;
+      position: relative;
+      width: 100%;
+      padding: 0 20px 0 100px;
+      text-align: left;
+      &:before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0;
+      }
+      &:after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0;
+      }
+    }
+    .timeline-image {
+      z-index: 100;
+      position: absolute;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      margin-left: 0;
+      border: 7px solid #f1f1f1;
+      border-radius: 100%;
+      text-align: center;
+      color: #fff;
+      background-color: #fed136;
+      h4 {
+        margin-top: 12px;
+        @include font13;
+        line-height: 14px;
+      }
+    }
+    &.timeline-inverted > .timeline-panel {
+      float: right;
+      padding: 0 20px 0 100px;
+      text-align: left;
+      &:before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0;
+      }
+      &:after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+    &.subheading {
+      text-transform: none;
+    }
+  }
+  .timeline-body > {
+    p, ul {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.seminar-list {
+  dt {
+    margin-bottom: 10px;
+    @include font16;
+  }
+}
+
+// PCの時
+@media (min-width: $wise-pc) {
+  .timeline {
+    &:before {
+      left: 50%;
+    }
+    > li {
+      margin-bottom: 100px;
+      min-height: 100px;
+      .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+      }
+      .timeline-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+        h4 {
+          margin-top: 16px;
+          @include font14;
+          line-height: 18px;
+        }
+      }
+      &.timeline-inverted > .timeline-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px;
+    .timeline-panel {
+      padding: 0 20px 20px;
+    }
+    .timeline-image {
+      width: 150px;
+      height: 150px;
+      margin-left: -75px;
+      h4 {
+        margin-top: 30px;
+        @include font18;
+        line-height: 26px;
+      }
+    }
+    &.timeline-inverted > .timeline-panel {
+      padding: 0 20px 20px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px;
+    .timeline-panel {
+      padding: 0 20px 20px 100px;
+    }
+    .timeline-image {
+      width: 170px;
+      height: 170px;
+      margin-left: -85px;
+      h4 {
+        margin-top: 40px;
+      }
+    }
+    &.timeline-inverted > .timeline-panel {
+      padding: 0 100px 20px 20px;
+    }
+  }
+}
+
+/* !: sponsor --------------- */
+
+aside.clients {
+	padding: 40px;
+	img {
+  width: 80%;
+  margin: 50px auto;
+  }
+}
+
+
+/* !: party ----------------- */
+.entry {
+  @include font18;
+  mark {
+    background-color: #fff;
+    @include font24;
+    font-weight: bold;
+  }
+}
+
+/* !:access ---------------- */
+section#access {
+  background-color: $color-black;
+  background-position: center;
+  background-repeat: no-repeat;
+  .section-heading {
+    color: #fff;
+    span {
+      display: none;
+    }
+  }
+  .form-group {
+    margin-bottom: 25px;
+    input, textarea {
+      padding: 20px;
+    }
+    input.form-control {
+      height: auto;
+    }
+    textarea.form-control {
+      height: 236px;
+    }
+  }
+  .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+  }
+  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+  }
+  .text-danger {
+    color: #e74c3c;
+  }
+  p {
+    color: #fff;
+  }
+}
+
+// PCの時
+@media (min-width: $wise-pc) {
+  section#contact .section-heading {
+    span {
+      display: inline-block;
+    }
+    br {
+      display: none;
+    }
+  }
+}
